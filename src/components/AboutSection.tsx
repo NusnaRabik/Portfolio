@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { TextGenerateEffect } from './TextGenerateEffect';
 import aboutMeImage from '../assets/WhatsApp Image 2024-11-18 at 20.36.33_c1626ba0.jpg';
 
-export const AboutSection = () => {
+export const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -32,8 +32,14 @@ export const AboutSection = () => {
                 <div className="w-full h-full rounded-2xl bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
                   <div className="w-72 h-72 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800 overflow-hidden">
                     <img
-                      src={`${import.meta.env.BASE_URL}image/WhatsApp Image 2024-11-18 at 20.36.33_c1626ba0.jpg`}
-                      alt="About me"
+                      src={aboutMeImage}
+                      alt="About me - Nusna Rabik"
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      onError={(e: React.SyntheticEvent<HTMLImageElement, Event>) => {
+                        const target = e.target as HTMLImageElement;
+                        target.src = 'https://via.placeholder.com/288x288/06b6d4/ffffff?text=NR';
+                      }}
                     />
                   </div>
                 </div>
@@ -64,7 +70,7 @@ export const AboutSection = () => {
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">BSc(Hons) in Software Engineering</p>
               </div>
               <div className="p-4 rounded-lg bg-neutral-50 dark:bg-neutral-800/50 border border-neutral-200 dark:border-neutral-700">
-                <h4 className="font-semibent text-neutral-900 dark:text-white mb-2">Focus</h4>
+                <h4 className="font-semibold text-neutral-900 dark:text-white mb-2">Focus</h4>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">Full Stack & AI</p>
               </div>
             </div>

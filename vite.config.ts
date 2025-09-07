@@ -3,5 +3,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/Portfolio/', // <-- repo name
+  base: '/Portfolio/',    // correct for GitHub Pages
+  optimizeDeps: {
+    exclude: ['lucide-react'],
+  },
 });
