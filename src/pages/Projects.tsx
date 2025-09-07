@@ -42,7 +42,7 @@ const projects = [
     links: {
       liveDemo:
         "https://www.linkedin.com/posts/fathimanuzna753_webdevelopment-miniproject-travelwebsite-activity-7278308038925508608-GkcK?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAE7ZcBxC5o3V1FGePZSA4D5mhmddWbnao",
-      sourceCode: "https://github.com/NusnaRabik/Unit-Converter", // Assuming this link or change if different
+      sourceCode: "https://github.com/NusnaRabik/Travel-website", // Assuming this link or change if different
     },
   },
   {
@@ -59,7 +59,7 @@ const projects = [
     links: {
       liveDemo:
         "https://www.linkedin.com/posts/fathimanuzna753_webdevelopment-techproject-unitconverter-activity-7274826440838189060-8xwV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFAE7ZcBxC5o3V1FGePZSA4D5mhmddWbnao",
-      sourceCode: "https://github.com/NusnaRabik/Travel-website", // Assuming this link or change if different
+      sourceCode: "https://github.com/NusnaRabik/Unit-Converter", // Assuming this link or change if different
     },
   },
 ];
