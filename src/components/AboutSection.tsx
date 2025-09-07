@@ -31,10 +31,9 @@ export const AboutSection = () => {
               <div className="w-80 h-80 mx-auto rounded-2xl bg-gradient-to-br from-cyan-400 to-violet-500 p-1">
                 <div className="w-full h-full rounded-2xl bg-neutral-100 dark:bg-neutral-900 flex items-center justify-center">
                   <div className="w-72 h-72 rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-300 dark:from-neutral-700 dark:to-neutral-800 overflow-hidden">
-                    <img 
-                      src={aboutMeImage} 
-                      alt="Nusna Rabik - Full Stack Developer" 
-                      className="w-full h-full object-cover"
+                    <img
+                      src={`${import.meta.env.BASE_URL}image/WhatsApp Image 2024-11-18 at 20.36.33_c1626ba0.jpg`}
+                      alt="About me"
                     />
                   </div>
                 </div>
